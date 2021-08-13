@@ -9,5 +9,4 @@ include_directories(src/intf)
 
 add_executable(Neo
         src/impl/kernel/main.c
-    src/impl/x86_64/print.c
-    src/intf/print.h)
+        src/intf/print.h src/impl/kernel/io/print.c src/impl/kernel/io/print.h)
