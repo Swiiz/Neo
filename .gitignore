@@ -1,0 +1,9 @@
+build/
+dist/
+
+# logs
+logs/*
+
+# IDE(A)
+/cmake-build-debug/
+.idea
