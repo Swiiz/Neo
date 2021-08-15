@@ -2,7 +2,14 @@
 
 extern "C" void kernel_main(void) 
 {
-	nk_screen_clear();
-    nk_print_setColor(NK_PRINT_COLOR_YELLOW, NK_PRINT_COLOR_BLACK);
-    nk_print_str("Welcome to Neo kernel!\n");
+    using namespace neo::kernel;
+
+	print::screen::clear();
+    print::setColor(print::Color::YELLOW, print::Color::BLACK);
+    print::printString("Welcome to Neo kernel!\n");
+}
+
+extern "C" void __cxa_pure_virtual()
+{
+    // Do nothing or print an error message.
 }
